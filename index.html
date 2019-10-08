@@ -1,0 +1,67 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Интерактивное резюме</title>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<link rel="stylesheet" href="css/style.css"  type="text/css"/>
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<bgsound src="Omnia.mp3" loop="1" volume="500"></bgsound>
+		<EMBED SRC="Omnia.mp3" WIDTH="300" HEIGHT="100" ALIGN="left" HIDDEN="False" AUTOSTART="true" LOOP="True">
+		<!--
+			width - ширина панели в пикселях (можно и в процентах);
+			height - высота панели в пикселях (или процентах);
+			align - расположение панели относительно текста, возможные значения left, right, center; 
+			hidden - позволяет скрыть панель, значения аттрибута: true - панель скрыта, false - панель видима (значение по умолчанию);
+			autostart - значение true - проигрыватель стартует автоматически, false - ждет нажатия на кнопку "воспроизведение";
+			loop - цикл, т.е. при значении true мелодия будет проигрываться по кругу, а при значении false - только один раз.
+		-->	
+		<div class="hello">
+			
+			Привет,это я!<br>
+				Кратко обо мне ниже  
+		</div>
+		
+
+	<div class="foto_main">
+			<img src="img/its_me.png" alt="" width="400">
+	
+		<div class="content_life">
+			<div>About me</div>
+			<span class="my">Просто и со вкусом</span>
+		</div>
+		
+		<div class="content_educ">
+			<div>Ученье свет!</div>
+			<span class="my">Образование</span>
+		</div>
+
+		<div class="content_jod">
+			<div>***Работа и должности***</div>
+			<span class="jod1">Превая работа</span>
+		</div>
+
+		<div>
+			<a class="content_toggle" href="#">Мои скилы</a>
+			<div class="content_more" style="display: none;">
+	    			<p>
+	    				Блок скрытого текста...\
+	    			</p>	
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+		
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/script.js"></script>	
+	</body>
+</html>
